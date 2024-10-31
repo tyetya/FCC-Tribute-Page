@@ -1,15 +1,57 @@
+main {
+    background-color: #eee;    
+}
+
+@font-face {
+    font-family: 'UC4'; /* Adj nevet a betűtípusnak */
+    src: url(./fonts/UC4/UC4.ttf) format('truetype'); /* A .ttf fájl elérési útja */
+    font-family: 'Nathan';
+    src: url(./fonts/UC4/Nathan-eXBp.ttf) format('truetype');
+}
+
+body {
+    font-family: 'Nathan', 'UC4', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Használj fallback betűtípust is */
+}
+    
+h1 {
+    display: block;
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
 #img-div {
     display: block;
     max-width: 100%;
     height: auto;
     text-align: center;
     position: center;
+    background-color: white;
+    margin: 0 1rem 0 1rem;
+    padding-bottom: 1rem;
+}
+
+#image {
+    padding-bottom: 1rem;
 }
 
 ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    
 }
 
-img {
-    display: block;
+
+
+#img-caption, p:first-of-type {
+    font-weight: 100;
+}
+
+#tribute-info {
+    padding-top: 2rem;
+    font-weight: 700;
+    font-size: 1.25rem;
 }
